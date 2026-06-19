@@ -2,48 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feedback form</title>
+    <title>Even Odd Checker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="text-align: center;">
-    <h1>FEEDBACK FORM </h1>
-    <form>
-        <p>
-            <label>NAME:</label>
-            <input type="text " name="name" placeholder="enter your name ">
 
-        </p>
-        <p>
-            <label> BRANCH: </label>
-            <input type="text" name="branch" placeholder="enter your branch">
+    <div class="container">
+        <h2>Even Odd Checker</h2>
 
-        </p>
-       <p>
-      <label>Section: </label> 
-            <select name="section" required> 
-                <option value="">-- Select section --</option> 
-                <option value="21">21</option> 
-                <option value="22">22</option> 
-                <option value="23">23</option> 
-                <option value="24">24</option> 
-                <option value="25">25</option> 
-                <option value="26">26</option> 
-                <option value="27">27</option> 
-                <option value="28">28</option> 
-                <option value="29">29</option> 
-            </select> 
-       </p>
+        <input type="number" id="num" placeholder="Enter a number">
 
-        <p> 
-            <label> Give Your Feedback Here </label><br> 
-            <textarea name="address" rows="4" cols="40" placeholder="Enter your address" required></textarea> 
-        </p> 
-         <p> 
-            <input type="submit" value="Register"> 
-            
-        </p> 
-    </form>
+        <button onclick="checkNumber()">
+            Check
+        </button>
+
+        <p id="result"></p>
     </div>
+
+    <script src="logic.js"></script>
 </body>
 </html>
